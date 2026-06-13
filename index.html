@@ -3,47 +3,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plataforma de Cursos</title>
+    <title>Plataforma de Cursos Virtuales</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-    <header>
-        <h1>Plataforma de Cursos Virtuales</h1>
-    </header>
+<header>
+    <h1>Plataforma de Cursos Virtuales</h1>
+</header>
 
-    <section class="contenedor">
+<nav>
 
-        <img src="img\programacion.png" alt="Curso de programación">
+    <ul>
 
-        <h2>Curso de Desarrollo Web</h2>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#registro">Registro</a></li>
+        <li><a href="#contacto">Contacto</a></li>
 
-        <p>
-            Aprende los fundamentos de HTML, CSS y JavaScript
-            para crear páginas web modernas e interactivas.
-        </p>
+    </ul>
 
-        <a href="https://developer.mozilla.org/es/" target="_blank">
-            Ver más información
-        </a>
+</nav>
 
-        <h3>Módulos del curso</h3>
+<section class="contenedor">
 
-        <ol>
-            <li>Introducción al desarrollo web</li>
-            <li>Fundamentos de HTML</li>
-            <li>Diseño con CSS</li>
-            <li>Programación con JavaScript</li>
-            <li>Proyecto final</li>
-        </ol>
+    <img src="img/programacion.png" alt="Curso de programación">
 
-        <button onclick="mostrarMensaje()">
-            Inscribirse
+    <h2>Curso de Desarrollo Web</h2>
+
+    <p>
+        Aprende los fundamentos de HTML, CSS y JavaScript para crear páginas web modernas e interactivas.
+    </p>
+
+    <a href="https://developer.mozilla.org/es/" target="_blank">
+        Ver más información
+    </a>
+
+    <h3>Módulos del curso</h3>
+
+    <ol>
+
+        <li>Introducción al desarrollo web</li>
+        <li>Fundamentos de HTML</li>
+        <li>Diseño con CSS</li>
+        <li>Programación con JavaScript</li>
+        <li>Proyecto final</li>
+
+    </ol>
+
+    <button onclick="mostrarMensaje()">
+        Inscribirse
+    </button>
+
+</section>
+
+<section id="beneficios" class="contenedor">
+
+    <h2>¿Por qué estudiar con nosotros?</h2>
+
+    <ul>
+
+        <li>Acceso a la plataforma las 24 horas.</li>
+        <li>Certificado al finalizar el curso.</li>
+        <li>Contenido actualizado.</li>
+        <li>Acompañamiento de instructores especializados.</li>
+        <li>Aprendizaje práctico basado en proyectos reales.</li>
+
+    </ul>
+
+</section>
+
+<section id="cursos" class="contenedor">
+
+    <h2>Otros cursos disponibles</h2>
+
+    <div class="cursos">
+
+        <div class="curso">
+
+            <h3>Python</h3>
+
+            <p>
+                Aprende programación desde cero y desarrolla proyectos de automatización.
+            </p>
+
+        </div>
+
+        <div class="curso">
+
+            <h3>Java</h3>
+
+            <p>
+                Conoce la programación orientada a objetos y el desarrollo empresarial.
+            </p>
+
+        </div>
+
+        <div class="curso">
+
+            <h3>Bases de Datos</h3>
+
+            <p>
+                Aprende SQL y administración de bases de datos con MySQL.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contenedor">
+
+    <h2>Información de los cursos</h2>
+
+    <table>
+
+        <tr>
+
+            <th>Curso</th>
+            <th>Duración</th>
+            <th>Nivel</th>
+
+        </tr>
+
+        <tr>
+
+            <td>Desarrollo Web</td>
+            <td>8 semanas</td>
+            <td>Básico</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Python</td>
+            <td>10 semanas</td>
+            <td>Intermedio</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Java</td>
+            <td>12 semanas</td>
+            <td>Avanzado</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Bases de Datos</td>
+            <td>6 semanas</td>
+            <td>Básico</td>
+
+        </tr>
+
+    </table>
+
+</section>
+
+<section id="registro" class="contenedor">
+
+    <h2>Formulario de inscripción</h2>
+
+    <form>
+
+        <label>Nombre completo</label>
+
+        <input type="text">
+
+        <label>Correo electrónico</label>
+
+        <input type="email">
+
+        <label>Curso de interés</label>
+
+        <select>
+
+            <option>Desarrollo Web</option>
+            <option>Python</option>
+            <option>Java</option>
+            <option>Bases de Datos</option>
+
+        </select>
+
+        <button type="button" onclick="mostrarMensaje()">
+            Enviar inscripción
         </button>
 
-    </section>
+    </form>
 
-    <script src="script.js"></script>
+</section>
+
+<section class="contenedor">
+
+    <h2>Opiniones de nuestros estudiantes</h2>
+
+    <div class="testimonio">
+
+        ⭐⭐⭐⭐⭐ Excelente plataforma y contenido muy práctico.
+
+    </div>
+
+    <div class="testimonio">
+
+        ⭐⭐⭐⭐⭐ Los cursos me ayudaron a fortalecer mis conocimientos.
+
+    </div>
+
+    <div class="testimonio">
+
+        ⭐⭐⭐⭐⭐ La metodología es clara y fácil de seguir.
+
+    </div>
+
+</section>
+
+<footer id="contacto">
+
+    <h3>Plataforma de Cursos Virtuales</h3>
+
+    <p>Correo: contacto@plataformacursos.com</p>
+
+    <p>Teléfono: 3001234567</p>
+
+    <p>2026 - Todos los derechos reservados.</p>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
